@@ -3,7 +3,7 @@ import '../styles/NoteCard.css';
 import pin from '../assets/pin.png';
 import options from '../assets/options.png';
 
-function NoteCard() {
+const NoteCard = () => {
     const [menu, setMenu] = useState(false);
 
     return (
