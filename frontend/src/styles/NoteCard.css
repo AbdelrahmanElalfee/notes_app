@@ -11,6 +11,7 @@
     color: #0d1b2a;
     background-color: #f8f9fa;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 400px;
 }
 
 .note-header {

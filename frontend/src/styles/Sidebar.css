@@ -32,7 +32,7 @@
 
 .sidebar-menu-list {
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -48,7 +48,6 @@
     justify-content: start;
     align-items: center;
     align-content: center;
-    border-radius: 10px;
 }
 
 .sidebar-menu-list > li > p {
