@@ -31,20 +31,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-REST_FRAMEWORK = {
-    "DEFAULT_AUTHENTICATION_CLASSES": (
-        "rest_framework_simplejwt.authentication.JWTAuthentication",
-    ),
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticated",
-    ],
-}
-
-SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
-}
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -54,14 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    # MY APPS
-    'api',
-    
-    # THIRD PARTY APPS
+
+    # Third-party packages
     'rest_framework',
-    'rest_framework.authtoken',
+    'rest_framework_simplejwt',
     "corsheaders",
+
+    # Internal apps
+    'api',
 ]
 
 MIDDLEWARE = [
@@ -152,5 +138,34 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS settings
+# https://pypi.org/project/django-cors-headers/
+
+CORS_URLS_REGEX = r'^/api/.*$'
+
+if DEBUG:
+    CORS_ALLOW_ALL_ORIGINS = ['http://localhost:3000', 'https://localhost:3000']
+else:
+    CORS_ALLOW_ALL_ORIGINS = ['https://notes.elalfee.com', 'http://notes.elalfee.com',]
+
 CORS_ALLOWS_CREDENTIALS = True
+
+# REST Framework settings
+# https://www.django-rest-framework.org/api-guide/authentication/
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ],
+    "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",
+    "PAGE_SIZE": 10,
+}
+
+SIMPLE_JWT = {
+    "AUTH_HEADER_TYPES": ("Bearer",),
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=120),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+}
