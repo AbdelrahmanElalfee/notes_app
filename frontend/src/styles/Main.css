@@ -1,0 +1,16 @@
+.main-container {
+    display: grid;
+    grid-template-areas:
+        "sidebar navbar"
+        "sidebar content";
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 270px 1fr;
+    min-height: 100vh;
+}
+
+.content-container {
+    grid-area: content;
+    height: 90vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}

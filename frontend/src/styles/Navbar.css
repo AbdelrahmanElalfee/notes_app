@@ -1,16 +1,15 @@
 .navbar-container{
-    position: absolute;
+    grid-area: navbar;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px;
     padding: 10px 20px;
     border-radius: 10px;
     color: #0d1b2a;
     background-color: #f8f9fa;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    top: 1vh;
-    right: 1vh;
-    left: 15rem;
+    height: 5vh;
 }
 
 .navbar-search {

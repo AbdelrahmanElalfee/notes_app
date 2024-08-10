@@ -1,0 +1,9 @@
+.note-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.note-list-container > div {
+    flex: 1 1 100%;
+}
