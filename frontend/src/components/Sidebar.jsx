@@ -1,12 +1,13 @@
 import '../styles/Sidebar.css';
 import note_icon from '../assets/note.png';
 import folder from '../assets/folder.png';
+import logo from '../assets/logo.png';
 
 const Sidebar = () => {
   return (
     <div className="sidebar-container">
         <div className="sidebar-logo">
-            <p>Online Notes</p>
+            <img src={logo} alt="logo"/>
         </div>
         <div className="sidebar-menu">
             <ul className='sidebar-menu-list'>
@@ -15,12 +16,10 @@ const Sidebar = () => {
                     <p>All notes</p>
                 </li>
                 <li>
-                    <img src={folder} alt="note"/>
-                    <p>TODOs</p>
+                    <p>Create</p>
                 </li>
                 <li>
-                    <img src={folder} alt="note"/>
-                    <p>Work</p>
+                    <p>Logout</p>
                 </li>
             </ul>
         </div>

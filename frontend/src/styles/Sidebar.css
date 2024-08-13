@@ -13,9 +13,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    color: #0d1b2a;
-    font-size: 24px;
+}
+
+.sidebar-logo img {
+    width: 300px;
 }
 
 .sidebar-menu {
@@ -27,16 +28,6 @@
     align-items: start;
     align-content: start;
     height: 75%;
-}
-
-.sidebar-menu-list {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.sidebar-menu-list > li:hover {
-    background-color: #e9ecef;
 }
 
 .sidebar-menu-list > li {

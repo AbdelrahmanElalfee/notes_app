@@ -1,0 +1,26 @@
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.auth-form > img {
+    height: 200px;
+}
+
+
+.auth-form {
+    width: 25%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #0d1b2a;
+    background-color: #f8f9fa;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
