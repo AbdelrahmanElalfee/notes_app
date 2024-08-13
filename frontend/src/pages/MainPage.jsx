@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
-import NoteList from "../components/NoteList";
+import {Outlet} from 'react-router-dom';
 import '../styles/Main.css';
 
 
@@ -10,7 +10,7 @@ export default function MainPage() {
         <Navbar />
         <Sidebar />
         <div className="content-container">
-            <NoteList />
+            <Outlet />
         </div>
     </div>
   )
