@@ -16,7 +16,7 @@ const Form = ({ type, handleForm }) => {
                 <Input type="text" placeholder="Username" name='username' />
                 <Input type="password" placeholder="Password" name='password' />
                 <div className="form-footer">
-                    <button type="submit" onClick={handleForm}>{type === 'login' ? 'Login' : 'Register'}</button>
+                    <button onClick={handleForm}>{type === 'login' ? 'Login' : 'Register'}</button>
                 </div>
             </form>
         </div>

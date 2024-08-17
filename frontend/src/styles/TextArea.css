@@ -1,4 +1,4 @@
-.input-field {
+.textarea-container {
     width: 100%;
     padding: 5px;
     margin: 15px;
@@ -10,7 +10,7 @@
     border-radius: 4px;
 }
 
-.input-field input {
+.textarea-container textarea {
     width: 80%;
     padding: 10px;
     border: 1px solid #e0e1dd;
@@ -19,11 +19,11 @@
     background-color: #f8f9fa;
 }
 
-.input-field input:focus {
+.textarea-container textarea:focus {
     border: 1px solid #0d1b2a;
 }
 
-.input-field label {
+.textarea-container label {
     margin-bottom: 5px;
     color: #0d1b2a;
 }

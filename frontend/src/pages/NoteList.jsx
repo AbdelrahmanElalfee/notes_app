@@ -1,4 +1,4 @@
-import NoteCard from './NoteCard'
+import NoteCard from '../components/NoteCard'
 import '../styles/NoteList.css'
 
 export default function NoteList() {

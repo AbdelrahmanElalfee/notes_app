@@ -1,3 +1,22 @@
 .form-container {
     width: 100%;
 }
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+}
+
+.form-footer button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #0d1b2a;
+    cursor: pointer;
+    background-color: #ffbe0b;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

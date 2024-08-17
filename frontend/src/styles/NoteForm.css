@@ -1,0 +1,11 @@
+.note-form-container {
+    width: 100%;
+}
+
+.note-form-footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    margin: 10px;
+}

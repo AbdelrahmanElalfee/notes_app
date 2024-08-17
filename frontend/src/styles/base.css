@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: #e0e1dd;
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+}
+
+input[type="search"] {
+    font-size: 16px;
+}
+
+input, button {
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+}
+
+textarea {
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
 }
