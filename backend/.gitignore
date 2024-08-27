@@ -2,3 +2,5 @@
 venv
 client
 client/*
+__pycache__/
+
